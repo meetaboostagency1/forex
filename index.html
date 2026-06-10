@@ -3,156 +3,237 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Join Free Telegram Channel</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
 <style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
 body{
-    margin:0;
-    font-family:'Poppins', sans-serif;
-    background:#f5f7fb;
-    text-align:center;
+background:#04120d;
+color:#fff;
+display:flex;
+justify-content:center;
+align-items:center;
+min-height:100vh;
+padding:20px;
+overflow-x:hidden;
 }
 
-/* Container */
-.container{
-    max-width:400px;
-    margin:auto;
-    padding:20px;
+.bg{
+position:fixed;
+inset:0;
+background:
+radial-gradient(circle at top right,#10b98133,transparent 40%),
+radial-gradient(circle at bottom left,#10b98122,transparent 40%);
+z-index:-1;
 }
 
-/* Button */
-.btn{
-    display:block;
-    background:linear-gradient(135deg,#1e73be,#22c55e);
-    color:#fff;
-    padding:15px;
-    border-radius:40px;
-    text-decoration:none;
-    font-weight:600;
-    margin:20px 0;
-    transition:all 0.3s ease;
-    box-shadow:0 5px 15px rgba(0,0,0,0.15);
-    animation:pulse 2s infinite;
-}
-
-/* Hover */
-.btn:hover{
-    transform:translateY(-3px) scale(1.03);
-    box-shadow:0 12px 30px rgba(34,197,94,0.5);
-}
-
-/* Click */
-.btn:active{
-    transform:scale(0.96);
-}
-
-/* Pulse Animation */
-@keyframes pulse {
-    0% { box-shadow:0 0 0 0 rgba(34,197,94,0.6); }
-    70% { box-shadow:0 0 0 15px rgba(34,197,94,0); }
-    100% { box-shadow:0 0 0 0 rgba(34,197,94,0); }
-}
-
-/* Profile */
-.profile{
-    width:110px;
-    height:110px;
-    border-radius:50%;
-    margin:20px auto;
-    border:5px solid #fff;
-    box-shadow:0 5px 20px rgba(0,0,0,0.1);
-    object-fit:cover;
-}
-
-/* Heading */
-h1{
-    color:#22c55e;
-    font-size:22px;
-    margin:10px 0;
-}
-
-/* Points */
-.points{
-    text-align:left;
-    margin:20px 0;
-}
-
-.points p{
-    font-size:14px;
-    margin:10px 0;
-}
-
-.check{
-    color:#22c55e;
-    font-weight:bold;
-}
-
-/* Join Text */
-.join{
-    font-weight:600;
-    color:#1e73be;
-}
-
-/* Disclaimer */
-.disclaimer{
-    font-size:12px;
-    color:#666;
-    margin-top:20px;
-}
-
-/* Footer */
-.footer{
-    margin-top:30px;
+.card{
+width:100%;
+max-width:420px;
+background:rgba(255,255,255,.05);
+backdrop-filter:blur(15px);
+border:1px solid rgba(16,185,129,.2);
+border-radius:24px;
+padding:30px;
+text-align:center;
+box-shadow:0 10px 40px rgba(16,185,129,.15);
 }
 
 .badge{
-    display:inline-block;
-    padding:10px 20px;
-    border-radius:30px;
-    background:linear-gradient(90deg,#7c3aed,#ec4899);
-    color:#fff;
-    font-size:12px;
+display:inline-block;
+padding:6px 14px;
+background:#10b98122;
+border:1px solid #10b98155;
+border-radius:50px;
+font-size:12px;
+font-weight:700;
+color:#6ee7b7;
+margin-bottom:20px;
+}
+
+.logo{
+width:120px;
+height:120px;
+border-radius:50%;
+margin:auto;
+overflow:hidden;
+border:4px solid #10b981;
+box-shadow:0 0 30px #10b98155;
+}
+
+.logo img{
+width:100%;
+height:100%;
+object-fit:cover;
+}
+
+h1{
+margin-top:18px;
+font-size:34px;
+font-weight:800;
+}
+
+.highlight{
+color:#6ee7b7;
+}
+
+.desc{
+margin-top:10px;
+color:#cbd5e1;
+font-size:14px;
+line-height:1.7;
+}
+
+.stats{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:10px;
+margin-top:25px;
+}
+
+.stat{
+background:#10b98111;
+border:1px solid #10b98122;
+border-radius:12px;
+padding:12px;
+}
+
+.stat h3{
+color:#6ee7b7;
+font-size:20px;
+}
+
+.stat p{
+font-size:11px;
+opacity:.7;
+}
+
+.features{
+margin-top:20px;
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:10px;
+}
+
+.feature{
+background:#ffffff08;
+padding:10px;
+border-radius:10px;
+font-size:13px;
+}
+
+.btn{
+display:block;
+margin-top:25px;
+padding:16px;
+background:linear-gradient(135deg,#10b981,#34d399);
+color:#04120d;
+font-weight:800;
+text-decoration:none;
+border-radius:14px;
+font-size:15px;
+transition:.3s;
+}
+
+.btn:hover{
+transform:translateY(-3px);
+}
+
+.footer{
+margin-top:18px;
+font-size:12px;
+opacity:.5;
+}
+
+@media(max-width:480px){
+h1{
+font-size:28px;
+}
 }
 </style>
 </head>
 
 <body>
 
-<div class="container">
+<div class="bg"></div>
 
-<!-- Button 1 -->
-<a href="https://t.me/YOUR_LINK" target="_blank" class="btn">
-JOIN NOW FOR FREE TELEGRAM CHANNEL 🚀
-</a>
+<div class="card">
 
-<img src="https://via.placeholder.com/150" class="profile">
-
-<h1>HAJI SULTAN KHAN OFFICIAL</h1>
-
-<div class="points">
-    <p><span class="check">✔</span> Nifty, BankNifty & Options calls with high accuracy</p>
-    <p><span class="check">✔</span> 1:4 Risk Reward Ratio • Daily 2–3 calls</p>
-    <p><span class="check">✔</span> Learn & Trade Smartly • Growing Community</p>
+<div class="badge">
+SEBI Registered Research Analyst
 </div>
 
-<p class="join">Join Today For FREE! 🚀</p>
+<div class="logo">
+<img src="https://i.ibb.co/nsL3ctFM/g-QB0bm-GNbfl-Pe-O1-I6dl1d2j7eme6-On-Bm-A-1j-ZNSFh-Zb-Uwn-LQXih-K-9-Wbq-Ishg0kibt-IW-nn9-Ep-Sf-Qur-Q2-NQh.jpg">
+</div>
 
-<!-- Button 2 -->
-<a href="https://t.me/YOUR_LINK" target="_blank" class="btn">
-JOIN NOW FOR FREE TELEGRAM CHANNEL 🚀
-</a>
+<h1>ALPHA <span class="highlight">TRADERS</span></h1>
 
-<p class="disclaimer">
-Disclaimer: Educational content only. Not SEBI registered. Trading involves risk.
+<p class="desc">
+Market Research • Nifty • Bank Nifty • Finnifty • Options Trading • Swing Trading
 </p>
 
+<div class="stats">
+
+<div class="stat">
+<h3>60K+</h3>
+<p>Members</p>
+</div>
+
+<div class="stat">
+<h3>SEBI</h3>
+<p>Registered</p>
+</div>
+
+<div class="stat">
+<h3>FREE</h3>
+<p>Join</p>
+</div>
+
+</div>
+
+<div class="features">
+
+<div class="feature">📈 Nifty Calls</div>
+<div class="feature">🏦 Bank Nifty</div>
+<div class="feature">💹 Finnifty</div>
+<div class="feature">📊 Swing Trading</div>
+
+</div>
+
+<a href="https://t.me/+UzDdQFrcdjJmZTZl" class="btn" target="_blank">
+🚀 JOIN TELEGRAM FREE
+</a>
+
 <div class="footer">
-    <div class="badge">🔥 Ads by ADCRAFTAGENCY • Boost Reach 🚀</div>
-</div>
 
 </div>
 
+</div>
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1572503937856445');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1572503937856445&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
 </body>
 </html>
